@@ -10,6 +10,8 @@ width=1
 canvas.addEventListener("mousedown" , myMouseDown)
 function myMouseDown(){
     mouse_Event="mousedown"
+    color=document.getElementById("color").value
+    width=document.getElementById("width").value
 
 }
 
@@ -38,4 +40,8 @@ function myMouseMove(e){
 
     last_position_of_X=current_position_of_mouseX
     last_position_of_Y=current_position_of_mouseY
+}
+
+function clearCanvas(){
+    ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height)
 }
